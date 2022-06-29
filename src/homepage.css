@@ -1,0 +1,109 @@
+
+.shape1{
+	
+    
+	clip-path: polygon(0 0, 100% 0, 90% 100%, 10% 100%);
+	
+}
+.shape2{
+	clip-path: polygon(0 0, 100% 0, 90% 100%, 10% 100%);
+}
+.shape3{
+	clip-path: polygon(0 0, 100% 0, 90% 100%, 10% 100%);
+}
+.shape4{
+	
+	clip-path: polygon(0 0, 100% 0, 90% 100%, 10% 100%);
+	
+}
+.arrow::after,
+.arrow::before{
+	position: absolute;
+	content:"";
+	width:50px;
+	height:50px;
+	background: #0057B8;
+	bottom: 0;
+	z-index: 100;
+
+}
+.arrow::before{
+	right:50%;
+	transform: skew(0,20deg);
+}
+
+.arrow::after{
+	left:50%;
+	transform: skew(0,-20deg);
+}
+.arrow2::after,
+.arrow2::before{
+	position: absolute;
+	content:"";
+	width:50px;
+	height:50px;
+	background: #151515;
+	bottom: 0;
+	z-index: 100;
+
+}
+.arrow2::before{
+	right:50%;
+	transform: skew(0,20deg);
+}
+
+.arrow2::after{
+	left:50%;
+	transform: skew(0,-20deg);
+}
+.arrow3::after,
+.arrow3::before{
+	position: absolute;
+	content:"";
+	width:50px;
+	height:50px;
+	background: #45BAF5;
+	bottom: 0;
+	z-index: 100;
+
+}
+.arrow3::before{
+	right:50%;
+	transform: skew(0,20deg);
+}
+
+.arrow3::after{
+	left:50%;
+	transform: skew(0,-20deg);
+}
+.scrolldown{
+	overflow:hidden;
+	overflow-y: scroll;
+	height:500px;
+	
+	
+}
+.scrolldown::-webkit-scrollbar{
+	display: none;
+}
+.image{
+	transition-delay: 10s;
+}
+.scrolldown {
+ transition-delay: 5s;
+}
+@keyframes myfirst {
+  
+	0%  { bottom: 0px; top: 200px;}
+	100% { bottom: 0px; top: 0px;}
+  }
+  .image_slide{
+  /* width: 100px;
+  height: 100px;
+  background: red; */
+  position: relative;
+  animation: myfirst 5s;
+  
+ 
+  /* animation-direction:alternate; */
+  }
